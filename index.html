@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>SevenSync - Macetech | Jardinería Urbana Inteligente</title>
+  <title>SevenSync - Macetech App | Jardinería Urbana Inteligente</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +20,11 @@
     </div>
     <nav>
       <ul class="nav-menu">
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#product">App</a></li>
-        <li><a href="#memberships">Planes</a></li>
-        <li><a href="#team">Sobre el equipo</a></li>
-        <li><a href="#contact">Contactar</a></li>
+        <li><a href="#hero" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="#product" data-i18n="nav.app">App</a></li>
+        <li><a href="#memberships" data-i18n="nav.plans">Planes</a></li>
+        <li><a href="#team" data-i18n="nav.team">Sobre el equipo</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contactar</a></li>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -32,17 +32,22 @@
         <span class="bar"></span>
       </div>
     </nav>
-    <a href="#app-download" class="cta-button">Descargar App</a>
+    <div class="header-actions">
+      <div class="language-selector">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="#product" class="cta-button" data-i18n="cta.getStarted">Get Started</a>
+    </div>
   </div>
 </header>
-
 
 <section id="hero">
   <div class="container">
     <div class="hero-content">
-      <h1>Macetech App: La aplicación que revoluciona el cuidado de tus plantas</h1>
-      <h2>Tecnología IoT para monitorear y controlar tus plantas con facilidad y sostenibilidad</h2>
-      <a href="#app-download" class="cta-button">Descargar Ahora</a>
+      <h1 data-i18n="hero.title">Macetech App: La aplicación que revoluciona el cuidado de tus plantas</h1>
+      <h2 data-i18n="hero.subtitle">Tecnología IoT para monitorear y controlar tus plantas con facilidad y sostenibilidad</h2>
+      <a href="#product" class="cta-button" data-i18n="cta.getStarted">Get Started</a>
     </div>
     <div class="hero-image">
       <img src="images/MacetechEnAccion.webp" alt="Macetech App en acción">
@@ -50,42 +55,41 @@
   </div>
 </section>
 
-
 <section id="product">
   <div class="container">
-    <h2>Nuestra Aplicación</h2>
-    <h3>Con Macetech App, el cuidado de tus plantas nunca fue tan fácil</h3>
+    <h2 data-i18n="product.title">Nuestra Aplicación</h2>
+    <h3 data-i18n="product.subtitle">Con Macetech App, el cuidado de tus plantas nunca fue tan fácil</h3>
     <div class="product-content">
       <div class="product-description">
-        <p>Macetech App es una aplicación inteligente que revoluciona la forma en que cuidas tus plantas. Gracias a su tecnología IoT, podrás monitorear y controlar el estado de tus plantas desde cualquier lugar, asegurando su crecimiento óptimo con el mínimo esfuerzo.</p>
+        <p data-i18n="product.description">Macetech App es una aplicación inteligente que revoluciona la forma en que cuidas tus plantas. Gracias a su tecnología IoT, podrás monitorear y controlar el estado de tus plantas desde cualquier lugar, asegurando su crecimiento óptimo con el mínimo esfuerzo.</p>
 
         <div class="product-features">
           <div class="feature">
             <i class="fas fa-tint"></i>
-            <h4>Monitoreo de humedad</h4>
-            <p>Seguimiento en tiempo real del nivel de humedad del suelo</p>
+            <h4 data-i18n="product.feature1.title">Monitoreo de humedad</h4>
+            <p data-i18n="product.feature1.description">Seguimiento en tiempo real del nivel de humedad del suelo</p>
           </div>
           <div class="feature">
             <i class="fas fa-sun"></i>
-            <h4>Control de luz</h4>
-            <p>Análisis de la exposición solar para un crecimiento óptimo</p>
+            <h4 data-i18n="product.feature2.title">Control de luz</h4>
+            <p data-i18n="product.feature2.description">Análisis de la exposición solar para un crecimiento óptimo</p>
           </div>
           <div class="feature">
             <i class="fas fa-wifi"></i>
-            <h4>Conexión IoT</h4>
-            <p>Control remoto desde tu smartphone o tablet</p>
+            <h4 data-i18n="product.feature3.title">Conexión IoT</h4>
+            <p data-i18n="product.feature3.description">Control remoto desde tu smartphone o tablet</p>
           </div>
           <div class="feature">
             <i class="fas fa-bell"></i>
-            <h4>Alertas inteligentes</h4>
-            <p>Notificaciones personalizadas sobre el estado de tus plantas</p>
+            <h4 data-i18n="product.feature4.title">Alertas inteligentes</h4>
+            <p data-i18n="product.feature4.description">Notificaciones personalizadas sobre el estado de tus plantas</p>
           </div>
         </div>
 
-        <a href="#memberships" class="cta-button">Ver Planes</a>
+        <a href="#memberships" class="cta-button" data-i18n="cta.viewPlans">Ver Planes</a>
       </div>
       <div class="product-video">
-        <video controls poster="images/video-poster.webp">
+        <video controls poster="images/video-poster.png">
           <source src="videos/product-video.mp4" type="video/mp4">
           Tu navegador no soporta videos HTML5.
         </video>
@@ -94,76 +98,73 @@
   </div>
 </section>
 
-
 <section id="memberships">
   <div class="container">
-    <h2>Planes de Suscripción</h2>
-    <p class="section-intro">Elige el plan que mejor se adapte a tus necesidades y comienza a disfrutar de todos los beneficios de Macetech App.</p>
+    <h2 data-i18n="memberships.title">Planes de Suscripción</h2>
+    <p class="section-intro" data-i18n="memberships.intro">Elige el plan que mejor se adapte a tus necesidades y comienza a disfrutar de todos los beneficios de Macetech App.</p>
 
     <div class="membership-plans">
       <div class="plan">
         <div class="plan-header">
-          <h3>Plan Gratuito</h3>
+          <h3 data-i18n="memberships.free.title">Plan Gratuito</h3>
           <div class="plan-price">
             <span class="price">$0</span>
-            <span class="period">/mes</span>
+            <span class="period" data-i18n="memberships.period">/mes</span>
           </div>
-          <p>Perfecto para comenzar</p>
+          <p data-i18n="memberships.free.subtitle">Perfecto para comenzar</p>
         </div>
         <div class="plan-features">
           <ul>
-            <li><i class="fas fa-check"></i> Monitoreo básico de plantas</li>
-            <li><i class="fas fa-check"></i> Alertas de riego</li>
-            <li><i class="fas fa-check"></i> Control manual desde la app</li>
-            <li><i class="fas fa-check"></i> Soporte por correo electrónico</li>
-            <li class="not-included"><i class="fas fa-times"></i> Análisis avanzado de datos</li>
-            <li class="not-included"><i class="fas fa-times"></i> Automatización personalizada</li>
-            <li class="not-included"><i class="fas fa-times"></i> Soporte prioritario</li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.free.feature1">Monitoreo básico de plantas</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.free.feature2">Alertas de riego</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.free.feature3">Control manual desde la app</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.free.feature4">Soporte por correo electrónico</span></li>
+            <li class="not-included"><i class="fas fa-times"></i> <span data-i18n="memberships.free.notFeature1">Análisis avanzado de datos</span></li>
+            <li class="not-included"><i class="fas fa-times"></i> <span data-i18n="memberships.free.notFeature2">Automatización personalizada</span></li>
+            <li class="not-included"><i class="fas fa-times"></i> <span data-i18n="memberships.free.notFeature3">Soporte prioritario</span></li>
           </ul>
         </div>
-        <a href="#app-download" class="plan-button">Comenzar Gratis</a>
+        <a href="#app-download" class="plan-button" data-i18n="memberships.free.cta">Comenzar Gratis</a>
       </div>
 
       <div class="plan premium">
-        <div class="plan-tag">Recomendado</div>
+        <div class="plan-tag" data-i18n="memberships.premium.tag">Recomendado</div>
         <div class="plan-header">
-          <h3>Plan Premium</h3>
+          <h3 data-i18n="memberships.premium.title">Plan Premium</h3>
           <div class="plan-price">
             <span class="price">$9.99</span>
-            <span class="period">/mes</span>
+            <span class="period" data-i18n="memberships.period">/mes</span>
           </div>
-          <p>Para jardineros exigentes</p>
+          <p data-i18n="memberships.premium.subtitle">Para jardineros exigentes</p>
         </div>
         <div class="plan-features">
           <ul>
-            <li><i class="fas fa-check"></i> Monitoreo avanzado de plantas</li>
-            <li><i class="fas fa-check"></i> Alertas personalizadas</li>
-            <li><i class="fas fa-check"></i> Control automático inteligente</li>
-            <li><i class="fas fa-check"></i> Análisis detallado de datos</li>
-            <li><i class="fas fa-check"></i> Automatización personalizada</li>
-            <li><i class="fas fa-check"></i> Soporte prioritario 24/7</li>
-            <li><i class="fas fa-check"></i> Acceso a nuevas funciones</li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.premium.feature1">Monitoreo avanzado de plantas</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.premium.feature2">Alertas personalizadas</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.premium.feature3">Control automático inteligente</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.premium.feature4">Análisis detallado de datos</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.premium.feature5">Automatización personalizada</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.premium.feature6">Soporte prioritario 24/7</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="memberships.premium.feature7">Acceso a nuevas funciones</span></li>
           </ul>
         </div>
-        <a href="#app-download" class="plan-button premium-button">Obtener Premium</a>
+        <a href="#app-download" class="plan-button premium-button" data-i18n="memberships.premium.cta">Obtener Premium</a>
       </div>
     </div>
 
     <div class="plan-comparison">
-      <p>¿No estás seguro? <a href="#contact">Contáctanos</a> para obtener más información o prueba el plan gratuito sin compromiso.</p>
+      <p><span data-i18n="memberships.notSure">¿No estás seguro?</span> <a href="contact.html" data-i18n="memberships.contactUs">Contáctanos</a> <span data-i18n="memberships.tryFree">para obtener más información o prueba el plan gratuito sin compromiso.</span></p>
     </div>
   </div>
 </section>
 
-
 <section id="team">
   <div class="container">
-    <h2>Conoce a nuestro equipo</h2>
-    <p class="team-intro">Somos un grupo de apasionados por la tecnología y la sostenibilidad, comprometidos con crear soluciones que mejoren la vida de las personas y el planeta.</p>
+    <h2 data-i18n="team.title">Conoce a nuestro equipo</h2>
+    <p class="team-intro" data-i18n="team.intro">Somos un grupo de apasionados por la tecnología y la sostenibilidad, comprometidos con crear soluciones que mejoren la vida de las personas y el planeta.</p>
 
     <div class="video-container">
-      <!-- Cambiar por los links cuando los videos esten hechos -->
-      <video controls poster="images/video-poster.webp">
+      <video controls poster="images/video-poster.png">
         <source src="videos/team-video.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
       </video>
@@ -198,51 +199,52 @@
   </div>
 </section>
 
-
 <section id="benefits">
   <div class="container">
-    <h2>¿Por qué elegir Macetech App?</h2>
+    <h2 data-i18n="benefits.title">¿Por qué elegir Macetech App?</h2>
 
     <div class="benefits-grid">
       <div class="benefit">
         <i class="fas fa-chart-line"></i>
-        <h3>Análisis inteligente</h3>
-        <p>Obtén datos detallados sobre el crecimiento y salud de tus plantas</p>
+        <h3 data-i18n="benefits.benefit1.title">Análisis inteligente</h3>
+        <p data-i18n="benefits.benefit1.description">Obtén datos detallados sobre el crecimiento y salud de tus plantas</p>
       </div>
       <div class="benefit">
         <i class="fas fa-mobile-alt"></i>
-        <h3>Control total</h3>
-        <p>Gestiona tus plantas desde cualquier lugar con nuestra app intuitiva</p>
+        <h3 data-i18n="benefits.benefit2.title">Control total</h3>
+        <p data-i18n="benefits.benefit2.description">Gestiona tus plantas desde cualquier lugar con nuestra app intuitiva</p>
       </div>
       <div class="benefit">
         <i class="fas fa-robot"></i>
-        <h3>Automatización</h3>
-        <p>Configura rutinas personalizadas para el cuidado de tus plantas</p>
+        <h3 data-i18n="benefits.benefit3.title">Automatización</h3>
+        <p data-i18n="benefits.benefit3.description">Configura rutinas personalizadas para el cuidado de tus plantas</p>
       </div>
       <div class="benefit">
         <i class="fas fa-leaf"></i>
-        <h3>Biblioteca de plantas</h3>
-        <p>Accede a información detallada sobre cientos de especies</p>
+        <h3 data-i18n="benefits.benefit4.title">Biblioteca de plantas</h3>
+        <p data-i18n="benefits.benefit4.description">Accede a información detallada sobre cientos de especies</p>
       </div>
       <div class="benefit">
         <i class="fas fa-cloud"></i>
-        <h3>Sincronización en la nube</h3>
-        <p>Tus datos siempre seguros y accesibles desde cualquier dispositivo</p>
+        <h3 data-i18n="benefits.benefit5.title">Sincronización en la nube</h3>
+        <p data-i18n="benefits.benefit5.description">Tus datos siempre seguros y accesibles desde cualquier dispositivo</p>
       </div>
     </div>
 
-    <a href="#app-download" class="cta-button">Descargar Ahora</a>
+    <a href="#app-download" class="cta-button" data-i18n="cta.getStarted">Get Started</a>
   </div>
 </section>
-
 
 <section id="app-download">
   <div class="container">
     <div class="app-content">
       <div class="app-text">
-        <h2>Descarga nuestra app</h2>
-        <p>Controla tus plantas desde cualquier lugar con nuestra aplicación móvil. Disponible para iOS y Android.</p>
-        <h3>Download us on your favorite platform.</h3>
+        <h2 data-i18n="appDownload.title">Accede a Macetech App</h2>
+        <p data-i18n="appDownload.description">Controla tus plantas desde cualquier lugar con nuestra aplicación. Disponible en web, iOS y Android.</p>
+        <div class="web-app-button">
+          <a href="https://app.macetech.com" class="cta-button" data-i18n="appDownload.webApp">Acceder a la Web App</a>
+        </div>
+        <h3 data-i18n="appDownload.mobileTitle">Download us on your favorite platform.</h3>
         <div class="app-buttons">
           <a href="#" class="app-button app-store">
             <i class="fab fa-apple"></i>
@@ -264,44 +266,43 @@
   </div>
 </section>
 
-
 <section id="testimonials">
   <div class="container">
-    <h2>Lo que dicen nuestros usuarios</h2>
+    <h2 data-i18n="testimonials.title">Lo que dicen nuestros usuarios</h2>
 
     <div class="testimonials-slider">
       <div class="testimonial active">
         <div class="testimonial-content">
-          <p>"Macetech App ha cambiado completamente mi experiencia con las plantas. Ahora puedo tener un jardín hermoso sin preocuparme constantemente por el riego."</p>
+          <p data-i18n="testimonials.testimonial1.text">"Macetech App ha cambiado completamente mi experiencia con las plantas. Ahora puedo tener un jardín hermoso sin preocuparme constantemente por el riego."</p>
           <div class="testimonial-author">
             <img src="images/TestimonioMaria.webp" alt="Usuario 1">
             <div>
               <h4>María Fernández</h4>
-              <p>Arquitecta y amante de las plantas</p>
+              <p data-i18n="testimonials.testimonial1.role">Arquitecta y amante de las plantas</p>
             </div>
           </div>
         </div>
       </div>
       <div class="testimonial">
         <div class="testimonial-content">
-          <p>"Como persona que viaja constantemente, Macetech App me ha permitido mantener mis plantas vivas y saludables incluso cuando estoy fuera de casa por semanas."</p>
+          <p data-i18n="testimonials.testimonial2.text">"Como persona que viaja constantemente, Macetech App me ha permitido mantener mis plantas vivas y saludables incluso cuando estoy fuera de casa por semanas."</p>
           <div class="testimonial-author">
             <img src="images/TestimonioJavier.webp" alt="Usuario 2">
             <div>
               <h4>Javier López</h4>
-              <p>Ejecutivo y jardinero aficionado</p>
+              <p data-i18n="testimonials.testimonial2.role">Ejecutivo y jardinero aficionado</p>
             </div>
           </div>
         </div>
       </div>
       <div class="testimonial">
         <div class="testimonial-content">
-          <p>"La app es increíblemente intuitiva y me encanta recibir notificaciones sobre el estado de mis plantas. ¡Nunca había sido tan fácil mantener un jardín urbano!"</p>
+          <p data-i18n="testimonials.testimonial3.text">"La app es increíblemente intuitiva y me encanta recibir notificaciones sobre el estado de mis plantas. ¡Nunca había sido tan fácil mantener un jardín urbano!"</p>
           <div class="testimonial-author">
             <img src="images/TestimonioElenea.webp" alt="Usuario 3">
             <div>
               <h4>Elena Torres</h4>
-              <p>Diseñadora de interiores</p>
+              <p data-i18n="testimonials.testimonial3.role">Diseñadora de interiores</p>
             </div>
           </div>
         </div>
@@ -318,106 +319,52 @@
       <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
     </div>
 
-    <a href="#app-download" class="cta-button">Descargar Ahora</a>
+    <a href="#app-download" class="cta-button" data-i18n="cta.getStarted">Get Started</a>
   </div>
 </section>
-
-
-<section id="contact">
-  <div class="container">
-    <h2>Contacto</h2>
-
-    <div class="contact-content">
-      <div class="contact-form">
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="cta-button">Enviar mensaje</button>
-        </form>
-      </div>
-
-      <div class="contact-info">
-        <div class="info-item">
-          <i class="fas fa-envelope"></i>
-          <p>info@sevensync.com</p>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-phone"></i>
-          <p>+51 912 345 678</p>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>Universidad Peruana de Ciencias Aplicadas<br>Campus Chorrillos, Lima, Perú</p>
-        </div>
-
-        <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.2681493558365!2d-77.00837492394976!3d-12.14338584481462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7e2b05877c1%3A0xb580f42f9a4c4d3e!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas%20(UPC)%20-%20Campus%20Villa!5e0!3m2!1ses!2spe!4v1715035200000!5m2!1ses!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </div>
-</section>
-
 
 <footer>
   <div class="container">
     <div class="footer-content">
       <div class="footer-logo">
         <img src="images/Macetech-Logo_1.webp" alt="SevenSync Logo">
-        <p>Tecnología para un futuro sostenible</p>
+        <p data-i18n="footer.tagline">Tecnología para un futuro sostenible</p>
       </div>
 
       <div class="footer-links">
         <div class="link-group">
-          <h4>Enlaces rápidos</h4>
+          <h4 data-i18n="footer.quickLinks">Enlaces rápidos</h4>
           <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#product">App</a></li>
-            <li><a href="#memberships">Planes</a></li>
-            <li><a href="#team">Equipo</a></li>
-            <li><a href="#benefits">Beneficios</a></li>
-            <li><a href="#app-download">Descargar App</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#hero" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#product" data-i18n="nav.app">App</a></li>
+            <li><a href="#memberships" data-i18n="nav.plans">Planes</a></li>
+            <li><a href="#team" data-i18n="nav.team">Equipo</a></li>
+            <li><a href="#benefits" data-i18n="nav.benefits">Beneficios</a></li>
+            <li><a href="#app-download" data-i18n="nav.download">Acceder</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contacto</a></li>
           </ul>
         </div>
 
         <div class="link-group">
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">Legal</h4>
           <ul>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Política de cookies</a></li>
+            <li><a href="#" data-i18n="footer.privacy">Política de privacidad</a></li>
+            <li><a href="#" data-i18n="footer.terms">Términos y condiciones</a></li>
+            <li><a href="#" data-i18n="footer.cookies">Política de cookies</a></li>
           </ul>
         </div>
 
         <div class="link-group">
-          <h4>Empresa</h4>
+          <h4 data-i18n="footer.company">Empresa</h4>
           <ul>
-            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#" data-i18n="footer.about">Sobre nosotros</a></li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 SevenSync. Todos los derechos reservados.</p>
+      <p>&copy; 2025 SevenSync. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
       <div class="social-links">
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -428,6 +375,7 @@
   </div>
 </footer>
 
+<script src="i18n/i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

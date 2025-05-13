@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Contacto - SevenSync | Macetech App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#4EB95E">
+
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Macetech-Logo.webp" alt="SevenSync Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="index.html#product" data-i18n="nav.app">App</a></li>
+                <li><a href="index.html#memberships" data-i18n="nav.plans">Planes</a></li>
+                <li><a href="index.html#team" data-i18n="nav.team">Sobre el equipo</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contactar</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="header-actions">
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <a href="index.html#product" class="cta-button" data-i18n="cta.getStarted">Get Started</a>
+        </div>
+    </div>
+</header>
+
+<main>
+<!-- Contact Page -->
+<section id="contact-page">
+    <div class="container">
+        <div class="page-header">
+            <h1 data-i18n="contact.title">Contacto</h1>
+            <p data-i18n="contact.subtitle">Estamos aquí para ayudarte. Ponte en contacto con nosotros y te responderemos lo antes posible.</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-form">
+                <h2 data-i18n="contact.formTitle">Envíanos un mensaje</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-i18n="contact.subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" data-i18n="contact.send">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2 data-i18n="contact.infoTitle">Información de contacto</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@sevensync.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+51 912 345 678</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Universidad Peruana de Ciencias Aplicadas<br>Campus Chorrillos, Lima, Perú</p>
+                </div>
+
+                <h3 data-i18n="contact.followUs">Síguenos en redes sociales</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <h2 data-i18n="contact.findUs">Encuéntranos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.2681493558365!2d-77.00837492394976!3d-12.14338584481462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7e2b05877c1%3A0xb580f42f9a4c4d3e!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas%20(UPC)%20-%20Campus%20Villa!5e0!3m2!1ses!2spe!4v1715035200000!5m2!1ses!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="faq-section">
+            <h2 data-i18n="contact.faq">Preguntas frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="contact.faq1.question">¿Cómo puedo empezar a usar Macetech App?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="contact.faq1.answer">Simplemente descarga la aplicación desde App Store o Google Play, o accede a nuestra versión web. Regístrate con tu correo electrónico y ¡listo! Puedes comenzar a usar la versión gratuita inmediatamente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="contact.faq2.question">¿Cuál es la diferencia entre el plan gratuito y el premium?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="contact.faq2.answer">El plan gratuito te permite monitorear tus plantas de forma básica, mientras que el plan premium incluye análisis avanzados, automatización personalizada, soporte prioritario y muchas más funciones exclusivas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="contact.faq3.question">¿Puedo cancelar mi suscripción en cualquier momento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="contact.faq3.answer">Sí, puedes cancelar tu suscripción premium en cualquier momento. Tu cuenta volverá automáticamente al plan gratuito al final del período de facturación actual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+
+<script src="i18n/i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
