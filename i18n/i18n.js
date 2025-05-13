@@ -1,4 +1,3 @@
-// Translations object
 const translations = {
   es: {
     // Navigation
